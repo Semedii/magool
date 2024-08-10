@@ -1,0 +1,267 @@
+/* General styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  padding: 10px 0px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4bc16d; /* Green background color */
+}
+
+.navbar .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .logo {
+  flex: 1;
+}
+
+.navbar img {
+  height: 50px;
+}
+
+.navbar .logo h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffd700; /* Hover color */
+}
+
+
+
+/* Video background section styles */
+.image-background {
+  position: relative;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+#img-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.content {
+  z-index: 1; /* Ensures content appears above video */
+}
+
+.content h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #4bc16d; /* Button color */
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  transition: background-color 0.3s ease;
+}
+
+/* Transparent box styles */
+.transparent-box {
+  position: absolute;
+  bottom: 20%; /* Adjust to position the box vertically */
+  right: 30%; /* Adjust to position the box horizontally */
+  width: 500px; /* Set the width of the box */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with opacity */
+  color: #fff; /* White text color */
+  padding: 20px;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+  z-index: 2; /* Ensures it appears above other content */
+}
+
+.transparent-box h2 {
+  margin-top: 0;
+  font-size: 1.5em;
+}
+
+.transparent-box p {
+  margin-bottom: 0;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+.transparent-box .btn {
+  margin-top: 20px;
+}
+
+
+.btn:hover {
+  background-color: #e65c00; /* Hover color */
+}
+/* About Us Section */
+.about-us {
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.about-us h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #333;
+}
+
+.about-us-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.about-us-image {
+  flex: 1;
+  max-width: 100%;
+  padding: 20px;
+}
+
+.about-us-image img {
+  width: 100%;
+  height: auto;
+  background-color: #89e2a2;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-us-text {
+  flex: 2;
+  max-width: 100%;
+  padding: 20px;
+  text-align: left;
+}
+
+.about-us-text h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.about-us-text p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.about-us-text ul {
+  list-style-type: disc;
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.about-us-text ul li {
+  margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .about-us-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-us-image,
+  .about-us-text {
+    padding: 10px;
+  }
+}
+
+
+/* Our Services section styles */
+.our-services {
+  padding: 50px 20px;
+  /* background-color: #f9f9f9; */
+  text-align: center;
+}
+
+.our-services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.our-services h2 {
+  font-size: 2.5em;
+  margin-bottom: 1em;
+  color: #4bc16d;
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.service {
+  background-color: #fff;
+  padding: 20px;
+  margin: 10px;
+  /* border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  flex: 1 1 22%;
+  max-width: 22%;
+  text-align: center;
+}
+
+.service-icon {
+  max-width: 100px;
+  margin-bottom: 10px;
+}
+
+.service h3 {
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.service p {
+  font-size: 1em;
+}
